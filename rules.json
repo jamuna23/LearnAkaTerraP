@@ -1,0 +1,129 @@
+{
+    "name": "dt3-ux-menumanager.test.subway.com",
+    "children": [],
+    "behaviors": [
+        {
+            "name": "origin",
+            "options": {
+                "originType": "CUSTOMER",
+                "hostname": "origin-dt3-ux-menumanager.test.subway.com",
+                "forwardHostHeader": "REQUEST_HOST_HEADER",
+                "cacheKeyHostname": "REQUEST_HOST_HEADER",
+                "compress": true,
+                "enableTrueClientIp": true,
+                "trueClientIpHeader": "True-Client-IP",
+                "trueClientIpClientSetting": false,
+                "originCertificate": "",
+                "verificationMode": "CUSTOM",
+                "customValidCnValues": [
+                    "{{Origin Hostname}}",
+                    "{{Forward Host Header}}",
+                    "p2.partners.subway.com"
+                ],
+                "originCertsToHonor": "COMBO",
+                "customCertificates": [
+                    {
+                        "subjectCN": "*.test.subway.com",
+                        "subjectAlternativeNames": [
+                            "*.test.subway.com",
+                            "test.subway.com"
+                        ],
+                        "subjectRDNs": {
+                            "OU": "Domain Control Validated",
+                            "CN": "*.test.subway.com"
+                        },
+                        "issuerRDNs": {
+                            "ST": "Arizona",
+                            "C": "US",
+                            "L": "Scottsdale",
+                            "OU": "http://certs.godaddy.com/repository/",
+                            "O": "GoDaddy.com, Inc.",
+                            "CN": "Go Daddy Secure Certificate Authority - G2"
+                        },
+                        "notBefore": 1518020880000,
+                        "notAfter": 1581092880000,
+                        "sigAlgName": "SHA256WITHRSA",
+                        "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv0lIjUjyWJd5AE6Jgz8dUoTaz00WqNERDG51qkQy0x8zHDXlcKfghMKuznruqtMp5Kv2EJ+lzDVXp6C4qzqzgd19Y2csHdZW9IzzYuJMb22c8g0G1EDr3cUlmAyjKltrDjhrIJ9McSGvgQw8qlwTBPIFo8qLA2c+lhxC3cwIxIRnNOTR8PSMYmH+16U/91HwAZwlELatAWhwUcU9EhRomTUCyVk+AB8vo/P+i/yepgAgkijGsp9/E1YZEvAP/T8ba5qzDVEEy4nZ94d2jIula5sDklGJzn4Z90uPnnZjqTtlu+gRrJyumMN5Rlue4RtElVC/AHN1fNHuKGyxQb3sXwIDAQAB",
+                        "publicKeyAlgorithm": "RSA",
+                        "publicKeyFormat": "X.509",
+                        "serialNumber": 18035850803357032000,
+                        "version": 3,
+                        "sha1Fingerprint": "9c926640913e3877d13a7400af6274f02dea65a3",
+                        "pemEncodedCert": "-----BEGIN CERTIFICATE-----\nMIIFOTCCBCGgAwIBAgIJAPpMNr9kCiB5MA0GCSqGSIb3DQEBCwUAMIG0MQswCQYD\nVQQGEwJVUzEQMA4GA1UECBMHQXJpem9uYTETMBEGA1UEBxMKU2NvdHRzZGFsZTEa\nMBgGA1UEChMRR29EYWRkeS5jb20sIEluYy4xLTArBgNVBAsTJGh0dHA6Ly9jZXJ0\ncy5nb2RhZGR5LmNvbS9yZXBvc2l0b3J5LzEzMDEGA1UEAxMqR28gRGFkZHkgU2Vj\ndXJlIENlcnRpZmljYXRlIEF1dGhvcml0eSAtIEcyMB4XDTE4MDIwNzE2MjgwMFoX\nDTIwMDIwNzE2MjgwMFowPzEhMB8GA1UECxMYRG9tYWluIENvbnRyb2wgVmFsaWRh\ndGVkMRowGAYDVQQDDBEqLnRlc3Quc3Vid2F5LmNvbTCCASIwDQYJKoZIhvcNAQEB\nBQADggEPADCCAQoCggEBAL9JSI1I8liXeQBOiYM/HVKE2s9NFqjREQxudapEMtMf\nMxw15XCn4ITCrs567qrTKeSr9hCfpcw1V6eguKs6s4HdfWNnLB3WVvSM82LiTG9t\nnPINBtRA693FJZgMoypbaw44ayCfTHEhr4EMPKpcEwTyBaPKiwNnPpYcQt3MCMSE\nZzTk0fD0jGJh/telP/dR8AGcJRC2rQFocFHFPRIUaJk1AslZPgAfL6Pz/ov8nqYA\nIJIoxrKffxNWGRLwD/0/G2uasw1RBMuJ2feHdoyLpWubA5JRic5+GfdLj552Y6k7\nZbvoEaycrpjDeUZbnuEbRJVQvwBzdXzR7ihssUG97F8CAwEAAaOCAcAwggG8MAwG\nA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMA4GA1Ud\nDwEB/wQEAwIFoDA3BgNVHR8EMDAuMCygKqAohiZodHRwOi8vY3JsLmdvZGFkZHku\nY29tL2dkaWcyczEtODA2LmNybDBdBgNVHSAEVjBUMEgGC2CGSAGG/W0BBxcBMDkw\nNwYIKwYBBQUHAgEWK2h0dHA6Ly9jZXJ0aWZpY2F0ZXMuZ29kYWRkeS5jb20vcmVw\nb3NpdG9yeS8wCAYGZ4EMAQIBMHYGCCsGAQUFBwEBBGowaDAkBggrBgEFBQcwAYYY\naHR0cDovL29jc3AuZ29kYWRkeS5jb20vMEAGCCsGAQUFBzAChjRodHRwOi8vY2Vy\ndGlmaWNhdGVzLmdvZGFkZHkuY29tL3JlcG9zaXRvcnkvZ2RpZzIuY3J0MB8GA1Ud\nIwQYMBaAFEDCvSeOzDSDMKIz1/tss/C0LIDOMC0GA1UdEQQmMCSCESoudGVzdC5z\ndWJ3YXkuY29tgg90ZXN0LnN1YndheS5jb20wHQYDVR0OBBYEFApHe657ymjT/3ZD\ns25xGfN4vL1LMA0GCSqGSIb3DQEBCwUAA4IBAQC2S3RPKKI/NEiTcFuePGi/cYCE\nttGy5+U5hKtQ4S7VrMee8ogZYE2h9nt1LTI2tuFNiwu1TJGon8xzez1nEUBZ0Gvn\nj2ReqwPWgfAGmoS9wnW+ogMmoh+ObHToilb9N4A7QOJNtdRbhST/DKmdxfH9NnFk\ntaecFu4o6ZuioE5Py7Q8E78WjfcklqLbyNoWEKrJtkFgcH4vzPuHFiNi6yLVXoQ2\nX5gKwtSabPNzynokcl39H8l4xEbmG08oLnLOGXUAy6nr4BPXZYe1FzXsm7Zp7pnq\n04bRBtu9voeAwYQFW813OpVIlv9E/7QyzvasL0ujc7EfZTaWra+xMH8aPh7D\n-----END CERTIFICATE-----\n",
+                        "canBeLeaf": true,
+                        "canBeCA": false,
+                        "selfSigned": false
+                    },
+                    {
+                        "subjectCN": "*.test.subway.com",
+                        "subjectAlternativeNames": [
+                            "*.test.subway.com",
+                            "test.subway.com"
+                        ],
+                        "subjectRDNs": {
+                            "OU": "Domain Control Validated",
+                            "CN": "*.test.subway.com"
+                        },
+                        "issuerRDNs": {
+                            "ST": "Arizona",
+                            "C": "US",
+                            "OU": "http://certs.godaddy.com/repository/",
+                            "CN": "Go Daddy Secure Certificate Authority - G2",
+                            "L": "Scottsdale",
+                            "O": "GoDaddy.com, Inc."
+                        },
+                        "notBefore": 1574794343000,
+                        "notAfter": 1637952743000,
+                        "sigAlgName": "SHA256WITHRSA",
+                        "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqRFpLzDkfRos0dcgULAc59yUjUUd7j1di4R4376pRu/iPdu4FBa4anlzAxOIvPW/Tuf3fr9MqS913vwg/hXRRgxnVMWwc4cpvhAhHtb21aTzP5i3niQQpGQK2jV1cQ6qmlpPOEWiwtP79mzKKE5VOEhc4Tj9nSH6zm5+dOocyZm54MbdJLJJbxrSNEx7MfJhjlV7d+r8vVC0hssTGmkjlJeCQ9iskADbGkGtvDrb4Y/8nX+puLy9FnssEwSKZY523T3mkrJjQO/OHAWNMiz1HTHfCbhzfCD7RAfkQY3XzqSSbmcnHRnKu4IzQDHMHAbuOyvl9U4/bgn6YHR0Lq/bOQIDAQAB",
+                        "publicKeyAlgorithm": "RSA",
+                        "publicKeyFormat": "X.509",
+                        "serialNumber": 824863045908127900,
+                        "version": 3,
+                        "sha1Fingerprint": "8963c04d1eff739f262935f7325da0b666bcd146",
+                        "pemEncodedCert": "-----BEGIN CERTIFICATE-----\nMIIGvTCCBaWgAwIBAgIIC3KAkeezYE8wDQYJKoZIhvcNAQELBQAwgbQxCzAJBgNV\nBAYTAlVTMRAwDgYDVQQIEwdBcml6b25hMRMwEQYDVQQHEwpTY290dHNkYWxlMRow\nGAYDVQQKExFHb0RhZGR5LmNvbSwgSW5jLjEtMCsGA1UECxMkaHR0cDovL2NlcnRz\nLmdvZGFkZHkuY29tL3JlcG9zaXRvcnkvMTMwMQYDVQQDEypHbyBEYWRkeSBTZWN1\ncmUgQ2VydGlmaWNhdGUgQXV0aG9yaXR5IC0gRzIwHhcNMTkxMTI2MTg1MjIzWhcN\nMjExMTI2MTg1MjIzWjA/MSEwHwYDVQQLExhEb21haW4gQ29udHJvbCBWYWxpZGF0\nZWQxGjAYBgNVBAMMESoudGVzdC5zdWJ3YXkuY29tMIIBIjANBgkqhkiG9w0BAQEF\nAAOCAQ8AMIIBCgKCAQEAqRFpLzDkfRos0dcgULAc59yUjUUd7j1di4R4376pRu/i\nPdu4FBa4anlzAxOIvPW/Tuf3fr9MqS913vwg/hXRRgxnVMWwc4cpvhAhHtb21aTz\nP5i3niQQpGQK2jV1cQ6qmlpPOEWiwtP79mzKKE5VOEhc4Tj9nSH6zm5+dOocyZm5\n4MbdJLJJbxrSNEx7MfJhjlV7d+r8vVC0hssTGmkjlJeCQ9iskADbGkGtvDrb4Y/8\nnX+puLy9FnssEwSKZY523T3mkrJjQO/OHAWNMiz1HTHfCbhzfCD7RAfkQY3XzqSS\nbmcnHRnKu4IzQDHMHAbuOyvl9U4/bgn6YHR0Lq/bOQIDAQABo4IDRTCCA0EwDAYD\nVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDgYDVR0P\nAQH/BAQDAgWgMDgGA1UdHwQxMC8wLaAroCmGJ2h0dHA6Ly9jcmwuZ29kYWRkeS5j\nb20vZ2RpZzJzMS0xNTQwLmNybDBdBgNVHSAEVjBUMEgGC2CGSAGG/W0BBxcBMDkw\nNwYIKwYBBQUHAgEWK2h0dHA6Ly9jZXJ0aWZpY2F0ZXMuZ29kYWRkeS5jb20vcmVw\nb3NpdG9yeS8wCAYGZ4EMAQIBMHYGCCsGAQUFBwEBBGowaDAkBggrBgEFBQcwAYYY\naHR0cDovL29jc3AuZ29kYWRkeS5jb20vMEAGCCsGAQUFBzAChjRodHRwOi8vY2Vy\ndGlmaWNhdGVzLmdvZGFkZHkuY29tL3JlcG9zaXRvcnkvZ2RpZzIuY3J0MB8GA1Ud\nIwQYMBaAFEDCvSeOzDSDMKIz1/tss/C0LIDOMC0GA1UdEQQmMCSCESoudGVzdC5z\ndWJ3YXkuY29tgg90ZXN0LnN1YndheS5jb20wHQYDVR0OBBYEFNRVnT96RiF0ZXrs\noZTeyF7JwsFoMIIBgAYKKwYBBAHWeQIEAgSCAXAEggFsAWoAdgCkuQmQtBhYFIe7\nE6LMZ3AKPDWYBPkb37jjd80OyA3cEAAAAW6pDsCOAAAEAwBHMEUCIQC4WVK7haYj\nxPvX1tyn5XBIbqoVvgDDv1n7EpfxrK/XOAIgL0amg3HUo4UFRO+gLUz0KagERdUr\nrk7ipXFn7Y84gQ4AdwDuS723dc5guuFCaR+r4Z5mow9+X7By2IMAxHuJeqj9ywAA\nAW6pDsUfAAAEAwBIMEYCIQDZyC52IeQFNvrb9tnYVPELAFG95eQjIb8pDccVMNAk\nCQIhAMjzbHcJT7PKOl18d/3Yb8pndr4+HobmJMk81BlG5BKpAHcARJRlLrDuzq/E\nQAfYqP4owNrmgr7YyzG1P9MzlrW2gagAAAFuqQ7SxQAABAMASDBGAiEAyoSIJVka\n4gMRCi4bIyaWAGWcKMCoM5XQpJTJOkWfwssCIQCyS5l8vebqRWGzAt3YjIYz4LFI\nc5pDDhY0YghdXz3xKzANBgkqhkiG9w0BAQsFAAOCAQEAEp43aHH8dhhWm1+jui9y\nGe05MlNCXUW2RT8VMug0vrIhxv3lnT8ssfu28+o8rtbGgmY93xNb/ReHaWNfeNEV\nLdYEjXzVYpyj12aU5aR2Ro20cimC+1ZGUBTe4XZlJaZIMxtlKaxu5bMMPd/8uQym\nNtO5VaHbhmxmkUyetTKOcQ4pruT/H6XiZOwY4jGqiSKtck9P524m/VoGVGqSNm/f\nB8vKH8EUoZJuUgVERakUxu0XIJGwD+KL1YeA3lwuWjeSTJkhuxMzYP0fnMWuTC+o\nG8/MqY/z7nluVURIOo7MYYDdHz/8gJrUN0sGBA/QACE8AyhEpFsa7NLijWc76XkM\nDA==\n-----END CERTIFICATE-----\n",
+                        "canBeLeaf": true,
+                        "canBeCA": false,
+                        "selfSigned": false
+                    }
+                ],
+                "ports": "",
+                "httpPort": 80,
+                "httpsPort": 443,
+                "originSni": true,
+                "standardCertificateAuthorities": [
+                    "akamai-permissive"
+                ],
+                "customCertificateAuthorities": []
+            }
+        },
+        {
+            "name": "cpCode",
+            "options": {
+                "value": {
+                    "id": 792456,
+                    "description": "dt3-api-menumanager.test.subway.com",
+                    "products": [
+                        "Fresca"
+                    ],
+                    "createdDate": 1542055751000,
+                    "cpCodeLimits": null,
+                    "name": "dt3-api-menumanager.test.subway.com"
+                }
+            }
+        }
+    ],
+    "criteria": [
+        {
+            "name": "hostname",
+            "options": {
+                "matchOperator": "IS_ONE_OF",
+                "values": [
+                    "dt3-ux-menumanager.test.subway.com"
+                ]
+            }
+        }
+    ],
+    "criteriaMustSatisfy": "all",
+    "comments": ""
+}
